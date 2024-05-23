@@ -5,20 +5,28 @@
   text-align: center;
 }
 
+.taskForm {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .inputTask {
   padding: 10px;
-  width: 50%;
+  width: 80%;
   margin-right: 20px;
 }
 
-.formBtn {
+.btn {
   color: white;
   padding: 10px;
-  margin-bottom: 30px;
   border: 1px solid transparent;
-  background-color: #00BB34;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.formBtn {
+  background-color: #00BB34;
 }
 
 .formBtn:hover {
@@ -27,4 +35,25 @@
 
 .formBtn:active {
   box-shadow: 2px 2px 5px 0 #014614;
+}
+
+.task {
+  display: flex;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskBtn {
+  background-color: #bb0000
+}
+
+.taskBtn:hover {
+  border: 1px solid #2c0102;
+}
+
+.taskBtn:active {
+  box-shadow: 2px 2px 5px 0 #460101;
 }
