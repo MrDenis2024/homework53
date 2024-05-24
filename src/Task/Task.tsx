@@ -1,13 +1,14 @@
 import React from 'react';
 
 interface Props {
-  task: string;
+  textTask: string;
+  onRemove: React.MouseEventHandler;
 }
-const Task: React.FC<Props> = ({task}) => {
+const Task: React.FC<Props> = ({textTask, onRemove}) => {
   return (
     <div className='task'>
-      <p>{task}</p>
-      <button className='btn taskBtn'>Удалить</button>
+      <p>{textTask}</p>
+      <button className='btn taskBtn' onClick={onRemove}>Удалить</button>
     </div>
   );
 };
